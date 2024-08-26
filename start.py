@@ -6,7 +6,7 @@ import rfc_read_table
 conn = connect.connect()
 
 # setting up query and other options to rfc_read_table
-query = [{"TEXT": "MATNR EQ '3HAC080600-001'"}]
+query = [{"TEXT": "MATNR EQ 'xxx-xxx'"}]
 query = query + [{"TEXT": " AND SPRAS EQ 'E'"}]
 fields = ["MATNR", "SPRAS", "MAKTX"]
 table = "MAKT"
