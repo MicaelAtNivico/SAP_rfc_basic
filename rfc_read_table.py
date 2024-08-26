@@ -1,6 +1,4 @@
-import pyrfc
-import json
-def rfc_read_table(conn,query,fields,table):
+def rfc_read_table(conn, query, fields, table):
     result = conn.call("RFC_READ_TABLE", QUERY_TABLE=table, OPTIONS=query, FIELDS=fields)
     use_fields = result["FIELDS"]
     to_split = result["DATA"]
